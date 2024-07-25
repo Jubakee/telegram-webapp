@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Avatar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/tab1.css">
+</head>
+<body>
+    <section class="layout">
+        <div class="header">
+            <div id="level-container">
+                <span id="level-icon">🏆</span>
+                <span id="level-value">Lvl 1</span>
+            </div>
+            <div id="income-container">
+                <span id="income-icon">💵</span>
+                <span id="income" class="income-value">1 / sec</span>
+            </div>
+            <div id="coins-container">
+                <span id="coins-icon">💵</span>
+                <span id="coins" class="coins-value">0</span>
+            </div>
+        </div>
+
+        <main id="tab1" class="main active">
+            <div id="tab1-container">
+                <div class="tab1-content">
+                    <!-- Add any other content for the upper part of tab1 here -->
+                </div>
+                <div id="tab1-bottom-content">
+                    <div id="tab1-image-container">
+                        <button id="clickable-coin">
+                            <img src="./assets/coin.png" alt="coin">
+                        </button>
+                    </div>
+                    <div id="energy-bar-container">
+                        <div id="energy-bar">
+                            <div id="energy-fill"></div>
+                        </div>
+                        <div id="energy-value-container">
+                            <span id="energy-value">
+                                <span id="energy-count">1000</span> / <span id="max-energy">1000</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        
+        
+        <main id="tab2" class="main">
+            <div id="tab2-container">
+                <h2>Shop</h2>
+            </div>
+        </main>
+        
+        <main id="tab3" class="main">
+            <h2>Bag</h2>
+        </main>
+        
+        <main id="tab4" class="main">
+            <h2>Avatar</h2>
+        </main>
+        
+        <main id="tab5" class="main">
+            <h2>Rewards</h2>
+        </main>
+
+        <div class="footer">
+            <div class="tab active-tab" onclick="showTab('tab1');" id="tab1-btn">
+                <span id="tab-icon">💰</span>
+                <span>Earn</span>
+            </div>
+            <div class="tab" onclick="showTab('tab2');" id="tab2-btn">
+                <span id="tab-icon">🛒</span>
+                <span>Shop</span>
+            </div>
+            <div class="tab" onclick="showTab('tab3');" id="tab3-btn">
+                <span id="tab-icon">🎒</span>
+                <span>Bag</span>
+            </div>
+            <div class="tab" onclick="showTab('tab4');" id="tab4-btn">
+                <span id="tab-icon">🧑</span>
+                <span>Avatar</span>
+            </div>
+            <div class="tab" onclick="showTab('tab5');" id="tab5-btn">
+                <span id="tab-icon">🏆</span>
+                <span>Rewards</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/tabs.js"></script>
+
+</body>
+</html>
