@@ -45,6 +45,7 @@ body {
 
 .main.active {
     display: flex;
+    overflow: hidden;
 }
 
 .footer {
