@@ -43,7 +43,7 @@
 
 #energy-bar-container {
     width: 60%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #energy-bar {
@@ -63,7 +63,7 @@
 }
 
 #energy-value-container {
-   
+    padding: 10px;
 }
 
 #energy-value {
