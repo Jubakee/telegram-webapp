@@ -10,7 +10,6 @@ document.getElementById("clickable-coin").addEventListener("click", function(eve
 });
 
 document.getElementById("clickable-coin").addEventListener("touchstart", function(event) {
-    event.preventDefault();
     clearTimeout(debounceTimeout);
     debounceTimeout = setTimeout(() => {
         coinClicked(event);
@@ -71,17 +70,17 @@ function batchFeedback(touches, amount) {
 function createFeedback(x, y, amount) {
     const feedback = document.createElement('div');
     feedback.className = 'feedback';
-    feedback.innerText = `+${amount}`; // Display the amount of coins
+    feedback.innerText = `+${amount}`;
     feedback.style.left = `${x}px`;
     feedback.style.top = `${y}px`;
     document.body.appendChild(feedback);
 
-    // Trigger feedback animation
+    // Use requestAnimationFrame to ensure smooth animation
     requestAnimationFrame(() => {
         feedback.classList.add('show');
     });
 
-    // Remove the feedback element after animation
+    // Clean up after animation
     setTimeout(() => {
         feedback.classList.remove('show');
         feedback.classList.add('hidden');

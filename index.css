@@ -69,9 +69,6 @@ body {
     transition: background-color 0.3s;
 }
 
-.tab:hover {
-    background-color: #e0e0e0;
-}
 
 .active-tab {
     border-bottom: 3px solid #007bff;
