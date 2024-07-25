@@ -1,0 +1,92 @@
+/* Styles for tab2 */
+#tab2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: calc(100vh - 60px); /* Adjust based on footer height */
+    max-height: calc(100vh - 60px); /* Adjust based on footer height */
+    overflow-y: auto; /* Allows scrolling if needed */
+    box-sizing: border-box; /* Ensures padding is included in the height calculation */
+}
+
+
+.shop-categories {
+    display: flex;
+    flex-wrap: wrap; /* Wrap categories if necessary */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.shop-category {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px; /* Adjust font size for better fit */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.shop-category:hover {
+    background-color: #0056b3;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items if necessary */
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.shop-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    width: calc(50% - 20px); /* Adjust based on item gap */
+    max-width: 200px; /* Ensure items fit within the viewport */
+    box-sizing: border-box;
+}
+
+.shop-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item-details {
+    padding: 8px;
+}
+
+.item-details h3 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.item-details p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
