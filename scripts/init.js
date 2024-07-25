@@ -12,7 +12,7 @@ window.Telegram.WebApp.expand();
 window.Telegram.WebApp.disableVerticalSwipes();
 
 window.addEventListener('load', () => {
-    resetGame();
+    //resetGame();
     loadData();
     setInterval(rechargeEnergy, rechargeInterval);
 });

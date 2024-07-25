@@ -68,17 +68,17 @@ function batchFeedback(touches, amount) {
 function createFeedback(x, y, amount) {
     const feedback = document.createElement('div');
     feedback.className = 'feedback';
-    feedback.innerText = `+${amount}`;
+    feedback.innerText = `+${amount}`; // Display the amount of coins
     feedback.style.left = `${x}px`;
     feedback.style.top = `${y}px`;
     document.body.appendChild(feedback);
 
-    // Use requestAnimationFrame to ensure smooth animation
+    // Trigger feedback animation
     requestAnimationFrame(() => {
         feedback.classList.add('show');
     });
 
-    // Clean up after animation
+    // Remove the feedback element after animation
     setTimeout(() => {
         feedback.classList.remove('show');
         feedback.classList.add('hidden');
