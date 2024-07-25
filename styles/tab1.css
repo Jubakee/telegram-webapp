@@ -42,7 +42,7 @@
 
 
 #energy-bar-container {
-    width: 60%;
+    width: 80%;
     margin-top: 30px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 #energy-value {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* Feedback animation */
