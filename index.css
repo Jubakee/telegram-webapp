@@ -31,7 +31,6 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    font-size: 14px;
 }
 
 .main {
@@ -45,7 +44,6 @@ body {
 
 .main.active {
     display: flex;
-    overflow: hidden;
 }
 
 .footer {
@@ -55,20 +53,21 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    height: 90px;
 }
 
 .tab {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+.tab:hover {
+    background-color: #e0e0e0;
+}
 
 .active-tab {
     border-bottom: 3px solid #007bff;
@@ -76,12 +75,10 @@ body {
 
 .tab span {
     display: block;
-    font-size: 14px
-  
+    margin-top: 2px;
 }
 
 /* Optional: Additional styling for the icons */
 #tab-icon {
-    font-size: 14px;
-   
+    font-size: 1.2em;
 }

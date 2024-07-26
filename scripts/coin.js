@@ -10,11 +10,9 @@ document.getElementById("clickable-coin").addEventListener("click", function(eve
 });
 
 document.getElementById("clickable-coin").addEventListener("touchstart", function(event) {
-    clearTimeout(debounceTimeout);
-    debounceTimeout = setTimeout(() => {
-        coinClicked(event);
-        if (navigator.vibrate) navigator.vibrate(100); // Vibrate on click
-    }, 100); // Adjust debounce delay as needed
+    event.preventDefault();
+    coinClicked(event);
+    if (navigator.vibrate) navigator.vibrate(100); // Vibrate on touch
 });
 
 function coinClicked(event) {
