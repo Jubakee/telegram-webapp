@@ -7,9 +7,7 @@ const rechargeInterval = 1000; // Recharge every 1 seconds
 let lastUpdateTime = Date.now(); // Track last update time
 const feedbackQueue = []; // Animation Feedback Queue
 
-window.Telegram.WebApp.ready();
-window.Telegram.WebApp.expand();
-window.Telegram.WebApp.disableVerticalSwipes();
+
 
 window.addEventListener('load', () => {
     //resetGame();
